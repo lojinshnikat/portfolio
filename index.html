@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lujain Alshnaikat | Software Engineer & UI/UX Designer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace'],
+                    },
+                    colors: {
+                        dark: '#09090b',
+                        card: '#121215',
+                        border: '#27272a',
+                        accent: '#38bdf8',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #09090b;
+            color: #f4f4f5;
+        }
+        .glass-nav {
+            background: rgba(9, 9, 11, 0.8);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid #27272a;
+        }
+        .gradient-text {
+            background: linear-gradient(to right, #f4f4f5, #a1a1aa);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .card-hover {
+            transition: all 0.25s ease;
+        }
+        .card-hover:hover {
+            border-color: #52525b;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-sky-500/30 selection:text-sky-200">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 glass-nav">
+        <div class="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
+            <a href="#" class="font-mono text-sm font-medium tracking-wider text-zinc-100">
+                LA<span class="text-sky-400">.</span>
+            </a>
+            <div class="hidden sm:flex items-center space-x-8 text-sm text-zinc-400">
+                <a href="#about" class="hover:text-zinc-100 transition-colors">About</a>
+                <a href="#skills" class="hover:text-zinc-100 transition-colors">Skills</a>
+                <a href="#projects" class="hover:text-zinc-100 transition-colors">Projects</a>
+                <a href="#experience" class="hover:text-zinc-100 transition-colors">Experience</a>
+                <a href="#contact" class="hover:text-zinc-100 transition-colors">Contact</a>
+            </div>
+            <a href="mailto:lojinshnikat@gmail.com" class="text-xs font-mono px-3.5 py-1.5 rounded-full bg-zinc-100 text-zinc-950 font-medium hover:bg-zinc-200 transition-colors">
+                Get in touch
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="pt-36 pb-20 px-6 max-w-5xl mx-auto">
+        <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-zinc-900 border border-zinc-800 text-xs font-mono text-zinc-400 mb-6">
+            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+            <span>4th Year Software Engineering Student • Jordan</span>
+        </div>
+        
+        <h1 class="text-4xl sm:text-6xl font-bold tracking-tight gradient-text mb-6 leading-tight">
+            Lujain Hashem Alshnaikat
+        </h1>
+        
+        <p class="text-lg sm:text-xl text-zinc-400 max-w-2xl leading-relaxed mb-8 font-light">
+            Software Engineer shaping digital systems with engineering precision and creative clarity. Specialized in <span class="text-zinc-200 font-normal">Requirements Engineering</span>, <span class="text-zinc-200 font-normal">UI/UX Design</span>, <span class="text-zinc-200 font-normal">Backend Development</span>, and <span class="text-zinc-200 font-normal">Quality Assurance</span>.
+        </p>
+        
+        <div class="flex flex-wrap items-center gap-4">
+            <a href="#projects" class="px-5 py-2.5 rounded-lg bg-zinc-100 text-zinc-950 text-sm font-medium hover:bg-zinc-200 transition-colors">
+                View Projects
+            </a>
+            <a href="#contact" class="px-5 py-2.5 rounded-lg bg-zinc-900 border border-zinc-800 text-zinc-300 text-sm font-medium hover:border-zinc-700 hover:text-white transition-colors">
+                Contact Me
+            </a>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-6 space-y-28 pb-24">
+
+        <!-- About Section -->
+        <section id="about" class="scroll-mt-24 border-t border-zinc-800/80 pt-16">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h2 class="text-xs font-mono uppercase tracking-widest text-zinc-500">01 / About</h2>
+                    <h3 class="text-2xl font-semibold text-zinc-100 mt-2">Engineering meets Empathy</h3>
+                </div>
+                <div class="md:col-span-2 space-y-4 text-zinc-400 leading-relaxed text-sm sm:text-base">
+                    <p>
+                        I am a fourth-year Software Engineering student at <strong class="text-zinc-200 font-medium">Al-Balqa Applied University</strong>, driven by curiosity and a structured approach to solving real-world operational problems through software.
+                    </p>
+                    <p>
+                        My work bridges the gap between user needs and technical execution—spanning requirements analysis, interactive prototyping in Figma, backend logic, and rigorous usability & quality evaluation. Alongside technical development, I bring strong leadership experience from guiding student initiatives and volunteer teams.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="scroll-mt-24 border-t border-zinc-800/80 pt-16">
+            <div class="mb-10">
+                <h2 class="text-xs font-mono uppercase tracking-widest text-zinc-500">02 / Capabilities</h2>
+                <h3 class="text-2xl font-semibold text-zinc-100 mt-2">Technical Stack & Tools</h3>
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                <!-- Languages -->
+                <div class="p-5 rounded-xl bg-card border border-border card-hover">
+                    <div class="text-xs font-mono text-sky-400 mb-3">01. LANGUAGES</div>
+                    <h4 class="font-medium text-zinc-100 mb-3">Core Programming</h4>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-2.5 py-1 text-xs font-mono rounded bg-zinc-900 border border-zinc-800 text-zinc-300">Java</span>
+                        <span class="px-2.5 py-1 text-xs font-mono rounded bg-zinc-900 border border-zinc-800 text-zinc-300">Python</span>
+                        <span class="px-2.5 py-1 text-xs font-mono rounded bg-zinc-900 border border-zinc-800 text-zinc-300">C++</span>
+                        <span class="px-2.5 py-1 text-xs font-mono rounded bg-zinc-900 border border-zinc-800 text-zinc-300">SQL</span>
+                        <span class="px-2.5 py-1 text-xs font-mono rounded bg-zinc-900 border border-zinc-800 text-zinc-300">HTML / CSS</span>
+                    </div>
+                </div>
+
+                <!-- Product & Design -->
+                <div class="p-5 rounded-xl bg-card border border-border card-hover">
+                    <div class="text-xs font-mono text-sky-400 mb-3">02. UI/UX & ANALYSIS</div>
+                    <h4 class="font-medium text-zinc-100 mb-3">Product & Design</h4>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-2.5 py-1 text-xs font-mono rounded bg-zinc-900 border border-zinc-800 text-zinc-300">Figma</span>
+                        <span class="px-2.5 py-1 text-xs font-mono rounded bg-zinc-900 border border-zinc-800 text-zinc-300">Requirements Eng.</span>
+                        <span class="px-2.5 py-1 text-xs font-mono rounded bg-zinc-900 border border-zinc-800 text-zinc-300">Task Modeling</span>
+                        <span class="px-2.5 py-1 text-xs font-mono rounded bg-zinc-900 border border-zinc-800 text-zinc-300">Usability Eval</span>
+                    </div>
+                </div>
+
+                <!-- Engineering Concepts -->
+                <div class="p-5 rounded-xl bg-card border border-border card-hover">
+                    <div class="text-xs font-mono text-sky-400 mb-3">03. ARCHITECTURE</div>
+                    <h4 class="font-medium text-zinc-100 mb-3">Engineering & QA</h4>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-2.5 py-1 text-xs font-mono rounded bg-zinc-900 border border-zinc-800 text-zinc-300">OOP</span>
+                        <span class="px-2.5 py-1 text-xs font-mono rounded bg-zinc-900 border border-zinc-800 text-zinc-300">Data Structures</span>
+                        <span class="px-2.5 py-1 text-xs font-mono rounded bg-zinc-900 border border-zinc-800 text-zinc-300">Algorithms</span>
+                        <span class="px-2.5 py-1 text-xs font-mono rounded bg-zinc-900 border border-zinc-800 text-zinc-300">QA Testing</span>
+                    </div>
+                </div>
+
+                <!-- Tools & Operations -->
+                <div class="p-5 rounded-xl bg-card border border-border card-hover">
+                    <div class="text-xs font-mono text-sky-400 mb-3">04. DATA & TOOLS</div>
+                    <h4 class="font-medium text-zinc-100 mb-3">Workflow & Data</h4>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-2.5 py-1 text-xs font-mono rounded bg-zinc-900 border border-zinc-800 text-zinc-300">Advanced Excel</span>
+                        <span class="px-2.5 py-1 text-xs font-mono rounded bg-zinc-900 border border-zinc-800 text-zinc-300">Git & GitHub</span>
+                        <span class="px-2.5 py-1 text-xs font-mono rounded bg-zinc-900 border border-zinc-800 text-zinc-300">Flutter Basics</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="scroll-mt-24 border-t border-zinc-800/80 pt-16">
+            <div class="mb-10">
+                <h2 class="text-xs font-mono uppercase tracking-widest text-zinc-500">03 / Selected Work</h2>
+                <h3 class="text-2xl font-semibold text-zinc-100 mt-2">Featured Projects</h3>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-6">
+                <!-- Project 1 -->
+                <article class="p-6 rounded-2xl bg-card border border-border card-hover flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-xs font-mono text-sky-400 px-2.5 py-1 rounded bg-sky-500/10 border border-sky-500/20">
+                                PWA & System Design
+                            </span>
+                            <span class="text-xs font-mono text-zinc-500">2026</span>
+                        </div>
+                        <h4 class="text-xl font-semibold text-zinc-100 mb-3">
+                            Zaha Cultural Center Field Operations PWA
+                        </h4>
+                        <p class="text-sm text-zinc-400 leading-relaxed mb-6">
+                            Designed an interactive Progressive Web App prototype tailored to manage field employees and contract staff across all branches of Zaha Cultural Center in Jordan, featuring dedicated portals for public complaints and staff dispatching.
+                        </p>
+                    </div>
+                    <div class="flex flex-wrap gap-2 pt-4 border-t border-zinc-800/80">
+                        <span class="text-xs font-mono text-zinc-400">Figma</span>
+                        <span class="text-zinc-700">•</span>
+                        <span class="text-xs font-mono text-zinc-400">Requirements Engineering</span>
+                        <span class="text-zinc-700">•</span>
+                        <span class="text-xs font-mono text-zinc-400">Multi-role User Flows</span>
+                    </div>
+                </article>
+
+                <!-- Project 2 -->
+                <article class="p-6 rounded-2xl bg-card border border-border card-hover flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-xs font-mono text-emerald-400 px-2.5 py-1 rounded bg-emerald-500/10 border border-emerald-500/20">
+                                HCI & Usability
+                            </span>
+                            <span class="text-xs font-mono text-zinc-500">2026</span>
+                        </div>
+                        <h4 class="text-xl font-semibold text-zinc-100 mb-3">
+                            Teasetea.com — 5-Stage E-Commerce System
+                        </h4>
+                        <p class="text-sm text-zinc-400 leading-relaxed mb-6">
+                            End-to-end Human-Computer Interaction project involving system architecture, hierarchical task modeling, and comprehensive usability evaluation for a 5-stage online specialty tea ordering platform.
+                        </p>
+                    </div>
+                    <div class="flex flex-wrap gap-2 pt-4 border-t border-zinc-800/80">
+                        <span class="text-xs font-mono text-zinc-400">HCI Methodologies</span>
+                        <span class="text-zinc-700">•</span>
+                        <span class="text-xs font-mono text-zinc-400">Task Modeling</span>
+                        <span class="text-zinc-700">•</span>
+                        <span class="text-xs font-mono text-zinc-400">Usability Evaluation</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Experience & Leadership -->
+        <section id="experience" class="scroll-mt-24 border-t border-zinc-800/80 pt-16">
+            <div class="mb-10">
+                <h2 class="text-xs font-mono uppercase tracking-widest text-zinc-500">04 / Leadership & Community</h2>
+                <h3 class="text-2xl font-semibold text-zinc-100 mt-2">Experience & Activities</h3>
+            </div>
+
+            <div class="space-y-6">
+                <div class="p-6 rounded-xl bg-card border border-border">
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-2">
+                        <h4 class="font-semibold text-zinc-100">Public Relations — IEEE BAU Student Branch (Computer Society)</h4>
+                        <span class="text-xs font-mono text-zinc-500">Sep 2023 – Present</span>
+                    </div>
+                    <p class="text-sm text-zinc-400 leading-relaxed">
+                        Representing the IEEE Computer Society chapter at Al-Balqa Applied University, coordinating technical events, student outreach, and communication initiatives.
+                    </p>
+                </div>
+
+                <div class="p-6 rounded-xl bg-card border border-border">
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-2">
+                        <h4 class="font-semibold text-zinc-100">Team Leader — Public Service Team (Al-Balqa Applied University)</h4>
+                        <span class="text-xs font-mono text-zinc-500">Jun 2025 – Dec 2025</span>
+                    </div>
+                    <p class="text-sm text-zinc-400 leading-relaxed">
+                        Led student guidance committees assisting incoming students with registration workflows, coordinated official graduation ceremonies, and managed campus-wide volunteer initiatives.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="scroll-mt-24 border-t border-zinc-800/80 pt-16">
+            <div class="p-8 sm:p-12 rounded-2xl bg-card border border-border text-center max-w-3xl mx-auto">
+                <h2 class="text-xs font-mono uppercase tracking-widest text-sky-400 mb-3">05 / Connect</h2>
+                <h3 class="text-2xl sm:text-3xl font-bold text-zinc-100 mb-4">Let's build something meaningful.</h3>
+                <p class="text-sm sm:text-base text-zinc-400 mb-8 max-w-lg mx-auto">
+                    Available for software engineering internships, UI/UX design collaborations, and requirements analysis opportunities.
+                </p>
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                    <a href="mailto:lojinshnikat@gmail.com" class="w-full sm:w-auto px-6 py-3 rounded-lg bg-zinc-100 text-zinc-950 font-medium text-sm hover:bg-zinc-200 transition-colors">
+                        lojinshnikat@gmail.com
+                    </a>
+                    <a href="https://github.com/lojinshnikat" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto px-6 py-3 rounded-lg bg-zinc-900 border border-zinc-800 text-zinc-300 font-medium text-sm hover:border-zinc-700 hover:text-white transition-colors">
+                        GitHub (@lojinshnikat)
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-zinc-900 py-8 px-6 text-center text-xs font-mono text-zinc-600">
+        <p>© 2026 Lujain Hashem Alshnaikat. Built with HTML & Tailwind CSS.</p>
+    </footer>
+
+</body>
+</html>
